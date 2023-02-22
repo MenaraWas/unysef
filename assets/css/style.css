@@ -2,9 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
 
 
 
@@ -204,6 +201,10 @@ body {
   font-weight: var(--fw-500);
 }
 
+.bg-white{
+  background-color: white;
+}
+
 .has-before,
 .has-after {
   position: relative;
@@ -225,6 +226,10 @@ body {
   height: 6px;
   background-color: var(--mustard);
   z-index: -1;
+}
+
+.pb-140{
+  padding-bottom: 140px;
 }
 
 .btn {
@@ -317,6 +322,15 @@ body {
   font-weight: var(--fw-500);
   line-height: 1.2;
 }
+
+.sub-tema{
+  margin-top: 100px;
+}
+
+.list-subtema{
+  margin-top: 20px;
+}
+
 
 .section-subtitle::before {
   position: static;
@@ -574,6 +588,8 @@ body {
   margin-top: 100px;
 }
 
+
+
 /*-----------------------------------*\
   #timeline
 \*-----------------------------------*/
@@ -762,7 +778,7 @@ body {
 .unduhan .section-title { margin-block: 20px 60px; }
 
 .filter-list {
-  max-width: 90%;
+  max-width: 100%;
   margin-inline: auto;
   display: flex;
   flex-wrap: wrap;
@@ -880,10 +896,16 @@ body {
   margin-left: 5px;
 }
 
+.text-faq{
+  margin-top: 50px;
+}
+
 .btn-faq{
-  margin-top: 3em;
+  margin-top: 10px;
   background-color: #155BD5;
   border-radius: 5px;
+}
+.btn-cp{
 }
 
 .accordion .active:after {
@@ -1552,7 +1574,7 @@ body {
   .container { max-width: 1140px; }
 
   .section-title.text-center {
-    max-width: 20ch;
+    max-width: 30ch;
     margin-inline: auto;
   }
 
@@ -1687,15 +1709,76 @@ body {
 }
 
 /* CSS for about event page */
-
 .event-header{
-  padding: 6em;
   text-align: center;
-  background: #fff;
   font-size: 30px;
+  display: flex;
+	align-items: center;
+}
+
+.event-header .hero-text{
+  color: white;
 }
 
 .event-header h1{
-  color: var(--ijo-lumut);
+  color: var(--white);
+  margin-top: 2em;
+}
+
+.event-header div{
+  text-align: center;
+}
+
+
+.btn-action{
+  margin-top: 3em;
+}
+
+.btn-action a{
+  font-size: 16pt;
+  border-radius: 10px;
+  padding: 15px;
+  color:#155BD5;
+  margin-right: 15px;
+  background: white;
+}
+
+.list-check {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-check li {
+  font-size: 18px;
+  line-height: 1.67;
+  padding-left: 35px;
+  position: relative;
+}
+
+.list-check li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list-check li:after {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "";
+  line-height: inherit;
+  left: 5px;
+  top: -2px;
+}
+
+.list-check li:before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ff988d;
+  z-index: -1;
+  opacity: 0.2;
 }
 
